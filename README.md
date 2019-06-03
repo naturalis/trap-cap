@@ -29,17 +29,17 @@ docker run \
 
 The command consists of the following parts:
 
-- `docker run` - this is the standard part for any application that is distributed using
+- **docker run** - this is the standard part for any application that is distributed using
   the Docker system.
-- `-v /path/to/infile.yml:/sticky-traps.yml` - specifies the location of the configuration
+- **-v /path/to/infile.yml:/sticky-traps.yml** - specifies the location of the configuration
   file ([example](example/infile.yml)). On your system, the part `/path/to/infile.yml`
   needs to be replaced with the absolute path to where you have your configuration file.
   On Windows, this might be something like `C:\trap-cap\infile.yml`.
-- `-v /path/to/images:/images` - specifies the location of the images. This should be a 
+- **-v /path/to/images:/images** - specifies the location of the images. This should be a 
   folder with `*.JPG` files ([example](example/images)). On your system, the part
   `/path/to/images` should be replaced with the absolute path. For example to
   `C:\trap-cap\images` on Windows.
-- `trap-cap > results.tsv` - specifies the name of the application to run (i.e. 
+- **trap-cap > results.tsv** - specifies the name of the application to run (i.e. 
   `trap-cap`) and where to write the output. Normally, the output is written to the 
   console window, but by specifying `> results.tsv` it is written to a file instead
   ([example](example/results.tsv)).
