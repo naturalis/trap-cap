@@ -24,7 +24,7 @@ The tool is used, for example, as follows:
 docker run \
 	-v /path/to/infile.yml:/sticky-traps.yml \
 	-v /path/to/images:/images \
-		trap-cap > results.tsv
+		naturalis/trap-cap > results.tsv
 ```
 
 The command consists of the following parts:
@@ -47,5 +47,5 @@ The command consists of the following parts:
 ### To build the image from the provided Dockerfile:
 
 ```{bash}
-docker build -t trap-cap .
+docker build -t naturalis/trap-cap .
 ```
