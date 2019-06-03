@@ -43,7 +43,7 @@ The command consists of the following parts:
 - **trap-cap > results.tsv** - specifies the name of the application to run (i.e. 
   `trap-cap`) and where to write the output. Normally, the output is written to the 
   console window, but by specifying `> results.tsv` it is written to a file instead
-  ([example](example/results.tsv)).
+  ([example](https://raw.githubusercontent.com/naturalis/trap-cap/master/example/results.tsv)).
 
 ### To build the image from the provided Dockerfile:
 
