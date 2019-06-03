@@ -45,13 +45,3 @@ trap_colours:
 # to True will enable the detailed sizing classes: 0-1mm, 1-4mm, 4-7mm, 7-12mm, and >12mm. Setting detailed_size_classes
 # to False will enable the standard sizing classes: <4mm, 4-10, and >10mm.
 detailed_size_classes: False
-
-# Set a file below to get the results in the specified file. If no file is set the results will only be printed on the
-# commandline. The file will be created and results will be printed in tab delimited format, with the headers: File,
-# Total number of insects, Average area, Smaller than 4mm, Between 4 and 10mm, Larger than 10mm or, when detailed size
-# classes are set True: File, Total number of insects, Average area, Between 0 and 1mm, Between 1 and 4mm,
-# Between 4 and 7mm, Between 7 and 12mm, and Larger than 12mm. If there is no need for a file to save the results in a
-# file set result_file to result_file: ""
-# !!Each time sticky-traps.py runs it clears the result_file!!
-result_file: "example/results.tsv"
-
