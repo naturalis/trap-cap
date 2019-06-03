@@ -3,7 +3,10 @@
 Captures insect counts on sticky traps by image analysis. 
 
 ```{bash}
-docker run trap-cap
+docker run \
+	-v `pwd`/example/infile.yml:/sticky-traps.yml \
+	-v `pwd`/example/images:/images \
+		trap-cap
 ```
 
 ### To build the image from the provided Dockerfile:
