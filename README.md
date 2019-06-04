@@ -1,4 +1,7 @@
-# trap-cap - Captures insect counts on sticky traps by image analysis
+trap-cap - Captures insect counts on sticky traps by image analysis
+===================================================================
+
+### Introduction
 
 Sticky traps are sheets of plastic or paper that attract and trap insects. Such traps are
 mostly used to assess the presence and numbers of insects, rather than as a control 
@@ -17,6 +20,8 @@ Better still would be to be able to do this in batches, so that dozens or hundre
 images can be analyzed in one go. Here we provide this command line tool. It is made 
 available as a [Docker](https://www.docker.com/) container, which means it can be run on 
 a variety of operating systems.
+
+### How to install and use
 
 [![](docs/youtube.png)](https://www.youtube.com/watch?v=VwL-DeXbJNM)
 _Click on the image for a YouTube video that explains the installation and analysis process_
@@ -49,7 +54,11 @@ The command consists of the following parts:
   console window, but by specifying `> results.tsv` it is written to a file instead
   ([example](https://raw.githubusercontent.com/naturalis/trap-cap/master/example/results.tsv)).
 
-### To build the image from the provided Dockerfile:
+### Building new image from the provided Dockerfile
+
+This source code repository includes a Dockerfile that can be used to (re-)build a Docker image.
+Normally you don't have to do this, but for the sake of completeness the procedure would be
+as follows:
 
 ```{bash}
 docker build -t naturalis/trap-cap .
