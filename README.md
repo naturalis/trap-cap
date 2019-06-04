@@ -18,7 +18,7 @@ images can be analyzed in one go. Here we provide this command line tool. It is 
 available as a [Docker](https://www.docker.com/) container, which means it can be run on 
 a variety of operating systems.
 
-![[](docs/youtube.png)](https://www.youtube.com/watch?v=VwL-DeXbJNM)
+[![](docs/youtube.png)](https://www.youtube.com/watch?v=VwL-DeXbJNM)
 _Click on the image for a YouTube video that explains the installation and analysis process_
 
 The tool is used, for example, as follows:
