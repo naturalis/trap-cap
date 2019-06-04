@@ -24,7 +24,7 @@ The tool is used, for example, as follows:
 docker run \
 	-v /path/to/infile.yml:/sticky-traps.yml \
 	-v /path/to/images:/images \
-		trap-cap > results.tsv
+		naturalis/trap-cap > results.tsv
 ```
 
 The command consists of the following parts:
@@ -32,11 +32,10 @@ The command consists of the following parts:
 - **docker run** - this is the standard part for any application that is distributed using
   the Docker system.
 - **-v /path/to/infile.yml:/sticky-traps.yml** - specifies the location of the configuration
-  file 
-  ([example](https://raw.githubusercontent.com/naturalis/trap-cap/master/example/infile.yml)). 
-  On your system, the part `/path/to/infile.yml` needs to be replaced with the absolute 
-  path to where you have your configuration file. On Windows, this might be something 
-  like `C:\trap-cap\infile.yml`.
+  file ([example](https://raw.githubusercontent.com/naturalis/trap-cap/master/example/infile.yml)). 
+  On your system, the part `/path/to/infile.yml` needs to be replaced with the absolute path 
+  to where you have your configuration file. On Windows, this might be something like 
+  `C:\trap-cap\infile.yml`.
 - **-v /path/to/images:/images** - specifies the location of the images. This should be a 
   folder with `*.JPG` files 
   ([example](https://github.com/naturalis/trap-cap/tree/master/example/images)). On your 
@@ -50,5 +49,5 @@ The command consists of the following parts:
 ### To build the image from the provided Dockerfile:
 
 ```{bash}
-docker build -t trap-cap .
+docker build -t naturalis/trap-cap .
 ```
