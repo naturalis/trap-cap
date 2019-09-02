@@ -30,8 +30,8 @@ The tool is used, for example, as follows:
 
 ```{bash}
 docker run \
-	-v /path/to/infile.yml:/sticky-traps.yml \
-	-v /path/to/images:/images \
+	-v example/infile.yml:/sticky-traps.yml \
+	-v example/images:/images \
 		naturalis/trap-cap > results.tsv
 ```
 
